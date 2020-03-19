@@ -3615,7 +3615,8 @@ input[type="text"]:focus {
 }
 
 .save-btn li:hover i {
-    color: #FFF;
+    /* color: #FFF; */
+    opacity: 0.8;
 }
 
 .save-btn li i.ion-ios-play {
@@ -13795,4 +13796,14 @@ span.infobox_rate {
         font-size: 12px;
         padding: 0 2px 0 0;
     }
+}
+@media screen and (max-width:1199px){
+    .willHide{
+        display: none;
+    }
+}
+.save-btn li .textDanger{
+    font-size: 16px;
+    line-height: 36px;
+    color: rgb(255, 0, 0);
 }

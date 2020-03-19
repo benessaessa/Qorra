@@ -187,7 +187,7 @@
                                         <li><a href="#"><i class="fas fa-arrows-alt-h"></i></a>
                                             <span>3</span>
                                         </li>
-                                        <li><a href="#"><i class="lnr lnr-heart"></i></a>
+                                        <li><a href="#"><i class="fas fa-heart textDanger"></i></a>
                                             <span>0</span>
                                         </li>
                                         <li><a href="#" data-toggle="modal" data-target="#user-login-popup"><i class="lnr lnr-user"></i></a>
@@ -360,15 +360,9 @@
                     </div>
                     <div class="row">
                        <div class="col-xl-8 col-lg-12">
+                           <h4>Description</h4>
                             <div class="listing-desc-wrap mr-30">
                                 <div id="list-menu" class="list_menu">
-                                    <ul class="list-details-tab fixed_nav">
-                                        <li class="nav-item active"><a href="#description" class="active">Description</a></li>
-                                        <li class="nav-item"><a href="#video">Video</a></li>
-                                        <li class="nav-item"><a href="#details">Details</a></li>
-                                        <li class="nav-item"><a href="#floor_plan">Floor plan</a></li>
-                                        <li class="nav-item"><a href="#book_tour">Request Viewing</a></li>
-                                    </ul>
                                 </div>
                                 <!--Listing Details starts-->
                                 <div class="list-details-wrap">
@@ -472,40 +466,14 @@
                                         <h4 class="list-details-title">Request Viewing</h4>
                                         <form class="tour-form">
                                             <div class="row">
-                                                <div class="col-md-6">
-                                                    <div id="datepicker-from" class="input-group date" data-date-format="dd-mm-yyyy">
-                                                        <input class="form-control" type="text" placeholder="Tour Date">
-                                                        <span class="input-group-addon"><i class="lnr lnr-calendar-full"></i></span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <select class="listing-input hero__form-input  form-control custom-select">
-                                                        <option>Tour Time</option>
-                                                        <option>8.00 am</option>
-                                                        <option>8.15 am</option>
-                                                        <option>8.30 am</option>
-                                                        <option>8.45 am</option>
-                                                        <option>9.00 am</option>
-                                                        <option>9.15 am</option>
-                                                        <option>9.30 am</option>
-                                                        <option>9.45 am</option>
-                                                        <option>10.00 am</option>
-                                                        <option>9.00 am</option>
-                                                        <option>10.00 am</option>
-                                                        <option>10.15 am</option>
-                                                        <option>10.30 am</option>
-                                                        <option>10.45 am</option>
-                                                        <option>11.00 am</option>
-                                                    </select>
-                                                </div>
                                                 <div class="col-md-4">
                                                     <input type="text" class="form-control filter-input" placeholder="Your name">
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <input type="text" class="form-control filter-input" placeholder="Your Phone">
+                                                    <input type="tel" class="form-control filter-input" placeholder="Your Phone">
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <input type="text" class="form-control filter-input" placeholder="Your email">
+                                                    <input type="email" class="form-control filter-input" placeholder="Your email">
                                                 </div>
                                                 <div class="col-md-12">
                                                     <textarea class="contact-form__textarea mb-25" name="comment" id="comment_msg" placeholder="Your Message"></textarea>
@@ -520,6 +488,27 @@
                         </div>
                         <div class="col-xl-4 col-lg-12">
                             <div id="list-sidebar" class="listing-sidebar">
+                                <div class="widget willHide">
+                                    <h4 class="list-details-title mb-0">Request Viewing</h4>
+                                        <form class="tour-form pb-4">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <input type="text" class="form-control filter-input" placeholder="Your name">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="tel" class="form-control filter-input" placeholder="Your Phone">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="email" class="form-control filter-input" placeholder="Your email">
+                                                </div>
+                                                <div class="col-md-12 pt-3">
+                                                    <textarea class="contact-form__textarea mb-25" name="comment" id="comment_msg" placeholder="Your Message"></textarea>
+                                                    <input class="btn v3" type="submit" name="submit-contact"  value="Submit">
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                </div>
                                 <div class="widget">
                                     <h3 class="widget-title">People also viewed properties</h3>
                                     <li class="row recent-list">
@@ -647,30 +636,6 @@
                                         <div class="slider-btn v3 single-featured-prev"><i class="lnr lnr-arrow-left"></i></div>
                                     </div>
                                 </div>
-                                <div class="widget mortgage-widget">
-                                    <h3 class="widget-title">Property Mortgage</h3>
-                                    <form action="#" method="GET" enctype="multipart/form-data">
-                                        <div class="mortgage-group">
-                                            <span class="mortgage-icon">$</span>
-                                            <input class="mortgage-field" type="text" name="amount-one" id="amount-one" placeholder="Total Amount">
-                                        </div>
-                                        <div class="mortgage-group">
-                                            <span class="mortgage-icon">$</span>
-                                            <input class="mortgage-field" type="text" name="amount-two" id="amount-two" placeholder="Down Payment">
-                                        </div>
-                                        <div class="mortgage-group">
-                                            <span class="mortgage-icon">$</span>
-                                            <input class="mortgage-field" type="text" name="amount-three" id="amount-three" placeholder="Loan Terms(Years)">
-                                        </div>
-                                        <div class="mortgage-group">
-                                            <span class="mortgage-icon">%</span>
-                                            <input class="mortgage-field" type="text" name="amount-four" id="amount-four" placeholder="Total Amount">
-                                        </div>
-                                        <div class="mortgage-btn">
-                                            <button type="submit" data-toggle="modal" data-target="#mortgage_result">Calculate</button>
-                                        </div>
-                                    </form>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -701,8 +666,8 @@
                                                         <span>Carmen Properties</span>
                                                     </a>
                                                     <ul class="save-btn">
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="fas fa-heart textDanger"></i></a></li>
+                                                        <!-- <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li> -->
                                                     </ul>
                                                 </div>
                                             </div>
@@ -759,8 +724,8 @@
                                                         <span>Bob haris</span>
                                                     </a>
                                                     <ul class="save-btn">
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="fas fa-heart textDanger"></i></a></li>
+                                                        <!-- <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li> -->
                                                     </ul>
                                                 </div>
                                             </div>
@@ -818,8 +783,8 @@
                                                     </a>
                                                     <ul class="save-btn">
                                                         <li data-toggle="tooltip" data-placement="top" title="Photos"><a href=".photo-gallery" class="btn-gallery"><i class="lnr lnr-camera"></i></a></li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="fas fa-heart textDanger"></i></a></li>
+                                                        <!-- <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li> -->
                                                     </ul>
                                                     <div class="hidden photo-gallery">
                                                         <a href="images/single-listing/property_view_1.jpg"></a>
@@ -884,8 +849,8 @@
                                                         <span>Zilion Properties</span>
                                                     </a>
                                                     <ul class="save-btn">
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="fas fa-heart textDanger"></i></a></li>
+                                                        <!-- <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li> -->
                                                     </ul>
                                                 </div>
                                             </div>
@@ -942,8 +907,8 @@
                                                         <span>Hexa Properties</span>
                                                     </a>
                                                     <ul class="save-btn">
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="fas fa-heart textDanger"></i></a></li>
+                                                        <!-- <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li> -->
                                                     </ul>
                                                 </div>
                                             </div>
@@ -1001,8 +966,8 @@
                                                     </a>
                                                     <ul class="save-btn">
                                                         <li data-toggle="tooltip" data-placement="top" title="Video"><a href="https://www.youtube.com/watch?v=v_ATnE02qFs" class="property-yt"><i class="fas fa-play"></i></a></li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="fas fa-heart textDanger"></i></a></li>
+                                                        <!-- <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li> -->
                                                     </ul>
                                                 </div>
                                             </div>
@@ -1060,8 +1025,8 @@
                                                     </a>
                                                     <ul class="save-btn">
                                                         <li data-toggle="tooltip" data-placement="top" title="Photos"><a href=".photo-gallery" class="btn-gallery"><i class="lnr lnr-camera"></i></a></li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="fas fa-heart textDanger"></i></a></li>
+                                                        <!-- <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li> -->
                                                     </ul>
                                                     <div class="hidden photo-gallery">
                                                         <a href="images/single-listing/property_view_1.jpg"></a>
