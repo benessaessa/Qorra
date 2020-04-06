@@ -184,9 +184,6 @@
                             <div class="col-lg-4 col-md-5 col-12 order-1 order-xl-3 order-lg-3 order-md-2 text-right pr-xs-0">
                                 <div class="menu-btn">
                                     <ul class="user-btn">
-                                        <li><a href="#"><i class="fas fa-arrows-alt-h"></i></a>
-                                            <span>3</span>
-                                        </li>
                                         <li><a href="#"><i class="fas fa-heart textDanger"></i></a>
                                             <span>0</span>
                                         </li>
@@ -226,7 +223,6 @@
                                 <select class="listing-input hero__form-input  form-control custom-select">
                                     <option>Sort by Newest</option>
                                     <option>Sort by Oldest</option>
-                                    <option>Sort by Featured</option>
                                     <option>Sort by Price(Low to High)</option>
                                     <option>Sort by Price(Low to High)</option>
                                 </select>
@@ -256,16 +252,17 @@
                                     </div>
                                     <div class="col-lg-1 col-md-2 col-sm-2 col-3 pl-0">
                                         <div class="filter-sub-menu style1 v1">
-                                            <div class="dropdown-filter"><i class="fas fa-cog"></i></div>
+                                            <div class="dropdown-filter"><i class="fas fa-filter"></i></div>
                                         </div>
                                     </div>
                                     <div class="explore__form-checkbox-list full-filter">
                                         <div class="row">
-                                            <div class="col-md-4 col-sm-4 mb-15 pr-0">
+                                            <div class="col-md-12 mb-15 pr-0">
                                                 <div class="input-search">
                                                     <input type="text" name="place-event" id="place-event" placeholder="Search by Key Words">
                                                 </div>
                                             </div>
+                                            
                                             <div class="col-md-4 col-sm-4 mb-15 pr-0">
                                                 <select class="hero__form-input  form-control custom-select  ">
                                                     <option>Rooms</option>
@@ -282,6 +279,13 @@
                                                     <option>2</option>
                                                     <option>3</option>
                                                     <option>4</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 mb-15 pr-0">
+                                                <select class="hero__form-input  form-control custom-select  ">
+                                                    <option>Level</option>
+                                                    <option>First</option>
+                                                    <option>Second</option>
                                                 </select>
                                             </div>
                                             <div class="col-md-6">
@@ -304,6 +308,13 @@
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="filter-checkbox mb-3">
+                                                    <p>Properties</p>
+                                                    <ul class="pb-3">
+                                                        <li>
+                                                            <input id="check-af" type="checkbox" name="check">
+                                                            <label for="check-af">Furnished</label>
+                                                        </li>
+                                                    </ul>
                                                     <p>Amenities</p>
                                                     <ul>
                                                         <li>
@@ -354,21 +365,9 @@
                                                             <label for="check-bs">Swimming Pool</label>
                                                         </li>
                                                     </ul>
-                                                    <ul class="pt-3">
-                                                        <li>
-                                                            <input id="check-af" type="checkbox" name="check">
-                                                            <label for="check-af">Furnished(Yes/No)</label>
-                                                        </li>
-                                                    </ul>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 col-sm-6 mb-15 pr-0">
-                                                <select class="hero__form-input  form-control custom-select  ">
-                                                    <option>Level</option>
-                                                    <option>First</option>
-                                                    <option>Second</option>
-                                                </select>
-                                            </div>
+                                            
                                             <div class="col-md-6 col-sm-6 mb-15">
                                             </div>
                                             <div class="col-md-6">
@@ -1319,7 +1318,7 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="signup-wrapper">
-                                                            <img src="images/others/login-1.png" alt="...">
+                                                            <img src="images/others/login-1.png" class="img-fluid" alt="...">
                                                             <p>Create an account to find the best Property for you.</p>
                                                         </div>
                                                     </div>

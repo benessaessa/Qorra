@@ -219,7 +219,7 @@ h6 {
 }
 
 .pt-130 {
-    padding-top: 130px !important;
+    padding-top: 120px !important;
 }
 
 .pt-140 {
@@ -796,7 +796,7 @@ h6 {
 }
 
 .section-padding {
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 
@@ -1520,7 +1520,7 @@ ul.list-inline li {
 .bg-h {
     background-position: center;
     background-size: cover;
-    height: 450px;
+    height: 210px;
 }
 
 .bg-s {
@@ -2889,6 +2889,7 @@ input[type="text"]:focus {
 .breadcrumb-menu h2 {
     font-size: 32px;
     color: #fff;
+    padding-top: 1rem;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 1.2;
