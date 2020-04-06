@@ -1338,7 +1338,7 @@ ul.list-inline li {
     padding: 9px 15px;
     border-radius: 3px;
     border: 1px solid #fff;
-    color: #fff !important;
+    color: white;
     transition: 0.3s;
     font-size: 15px;
     text-transform: capitalize;
@@ -5414,7 +5414,6 @@ input[type="text"]:focus {
     font-size: 35px;
     font-weight: 600;
     color: #f91;
-    margin-bottom: 30px;
 }
 
 
