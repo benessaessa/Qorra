@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
+
 <head>
     <!-- Metas -->
     <meta charset="UTF-8" />
@@ -13,9 +14,8 @@
     <link href="css/plugin.css" rel="stylesheet" />
     <!-- style CSS -->
     <link href="css/style.css" rel="stylesheet" />
-
     <!-- Document Title -->
-    <title>Contact Us</title>
+    <title>User Profile</title>
 </head>
 
 <body>
@@ -101,85 +101,56 @@
                 <div class="row">
                     <div class="col-md-8 offset-md-2 text-center">
                         <div class="breadcrumb-menu">
-                            <h2>Contact us</h2>
-                            <span><a href="home-v1.html">Home</a></span>
-                            <span>Contact us</span>
+                            <h2>User Profile</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!--Breadcrumb section ends-->
-
-        <!--Contact info starts -->
-        <div class="contact-info section-padding">
+        <!--Add Listing starts-->
+        <div class="list-details-section section-padding add_list pt-100">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="contact-info-item">
-                            <i class="fas fa-phone-alt"></i>
-                            <h4>Direct Contact</h4>
-                            <p><strong>Phone : </strong> 800 987 6543</p>
-                            <p><strong>Email : </strong> 800 987 6543</p>
-                            <p><strong>Website : </strong> 800 987 6543</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="contact-info-item">
-                            <i class="fas fa-business-time"></i>
-                            <h4>Business Hours</h4>
-                            <p><strong>Sunday : </strong> Closed</p>
-                            <p><strong>Monday-Friday : </strong>10AM - 8PM</p>
-                            <p><strong>Saturday : </strong>10AM - 2PM</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Contact info ends -->
-        <!--Contact section starts-->
-        <div class="contact-section v1 mt-10 mb-120">
-            <div class="container">
-                <div class="contact-map v1">
-                        <img src="images/bg/about.jpg" class="img-fluid">
-                </div>
-                <div class="row">
-                    <div class="col-lg-5 offset-lg-6 col-md-12">
-                        <div class="section-title v2">
-                            <h2>Write to us</h2>
-                        </div>
-                        <form action="php/send_mail.php" method="post" id="contact_form">
-                            <div class="form-control-wrap">
-                                <div id="message" class="alert alert-danger alert-dismissible fade"></div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="fname" placeholder="Name*" name="fname">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email_address" placeholder="email*" name="email">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="phone_number" placeholder="phnoe number" name="email">
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="8" name="comment" id="comment" placeholder="Your Message"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn v7">Send Message</button>
-                                </div>
+                <div class="row justify-content-around">
+                    <div class="col-md-4">
+                        <form id="register-form" action="#" method="post">
+                            <div class="form-group">
+                                <input type="text" name="user_name" id="user_name" tabindex="1" class="form-control" placeholder="Username" value="">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="mobile" id="mobile" tabindex="1" class="form-control" placeholder="Mobile Number" value="">
+                            </div>
+                            <p class="text-primary border-0 clickHide">Change Password</p>
+                            <div class="form-group hidenF">
+                                <input type="password" name="old_password" id="old_password" tabindex="2" class="form-control" placeholder="Old Password">
+                            </div>
+                            <div class="form-group hidenF">
+                                <input type="password" name="new-password" id="new-password" tabindex="2" class="form-control" placeholder="New Password">
+                            </div>
+                            <div class="res-box text-center mt-30">
+                                <button type="submit" class="btn v8"> Save </button>
                             </div>
                         </form>
                     </div>
+                    <div class="col-md-6">
+                        <div class="signup-wrapper">
+                            <img src="images/bg/about.jpg" class="img-fluid" alt="...">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!--Contact section ends-->
+        <!--Add Listing ends-->
         <!-- Scroll to top starts-->
         <span class="scrolltotop"><i class="lnr lnr-arrow-up"></i></span>
         <!-- Scroll to top ends-->
     </div>
     <!--Page Wrapper ends-->
     <!--Footer Starts-->
-    <div class="footer-wrapper v3">
+    <div class="footer-wrapper v1">
         
         <div class="footer-top-area">
             <div class="container">
@@ -220,30 +191,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-12 text-center sm-left">
+                    <div class="col-lg-3 offset-lg-1 col-md-12">
                         <div class="footer-content nav">
-                            <h2 class="title">Popular Searches</h2>
+                            <h2 class="title">Helpful Links</h2>
                             <ul class="list res-list">
-                                <li><a class="link-hov style2" href="#">Property for Rent</a></li>
-                                <li><a class="link-hov style2" href="#">Property for Sale</a></li>
-                                <li><a class="link-hov style2" href="#">Condominium for Sale</a></li>
-                                <li><a class="link-hov style2" href="#">Resale Properties</a></li>
-                                <li><a class="link-hov style2" href="#">Recent Properties</a></li>
+                                <li><a class="link-hov style2" href="#">Residential Space</a></li>
+                                <li><a class="link-hov style2" href="#">Commercial Space</a></li>
+                                <li><a class="link-hov style2" href="#">Condominium</a></li>
+                                <li><a class="link-hov style2" href="#">About us</a></li>
+                                <li><a class="link-hov style2" href="#">Contact us</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-12 text-center sm-left">
-                        <div class="footer-content nav">
-                            <h2 class="title">Quick Links</h2>
-                            <ul class="list res-list">
-                                <li><a class="link-hov style2" href="about.html">About us</a></li>
-                                <li><a class="link-hov style2" href="contact.html">Contact us</a></li>
-                                <li><a class="link-hov style2" href="faq.html">Privacy Policy</a></li>
-                                <li><a class="link-hov style2" href="faq.html">FAQ</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-12">
+                    <div class="col-lg-4 col-md-12">
                         <div class="footer-content">
                             <h4 class="title">Subscribe</h4>
                             <div class="value-input-wrap newsletter">
@@ -272,7 +232,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-8 offset-md-2">
                         <p>
-                            ©SarchHolm 2019. All rights reserved. </p>
+                            © SarchHolm 2019. All rights reserved. </p>
                     </div>
                 </div>
             </div>

@@ -3626,7 +3626,6 @@ input[type="text"]:focus {
 
 .trend-open p span {
     color: #888;
-    font-size: 12px;
     text-transform: capitalize;
     font-weight: 400;
 }
@@ -3940,9 +3939,11 @@ input[type="text"]:focus {
     display: inline-block;
 }
 
+.ords{
+    columns: 2 !important;
+}
 
 .property-title-box p span {
-    font-size: 12px;
     text-transform: capitalize;
     color: #888;
     font-weight: 400;
@@ -7138,7 +7139,6 @@ ul.icon li::before {
 }
 
 .entry-text .trend-open span {
-    font-size: 12px;
     font-weight: 500;
     margin-left: 0;
 }
@@ -13806,4 +13806,12 @@ span.infobox_rate {
     font-size: 16px;
     line-height: 36px;
     color: rgb(255, 0, 0);
+}
+.clickHide{
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.8rem 0;
+}
+.hidenF{
+    display: none;
 }

@@ -787,3 +787,8 @@
         }
     });
 
+$(document).ready(function(){
+ $('.clickHide').click(function(){
+    $('.hidenF').fadeToggle();
+ });
+});
