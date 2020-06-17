@@ -19,7 +19,19 @@
     <!-- Dashboard CSS -->
     <link href="css/dashboard.css" rel="stylesheet" />
     <!-- Document Title -->
-    <title>SarchHolm - Real Estate HTML Template</title>
+    <title>Viewing Requests</title>
+    <style>
+        .textCard{
+            font-size: 12px;
+            font-weight: bold;
+            padding-bottom: 0.5rem;
+        }
+        .imgView{
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -61,7 +73,7 @@
                         </li>
                         <li>
                             <a href="db-bookings.html">
-                                <i class="ion-ios-copy-outline"></i>Booking Request</a>
+                                <i class="ion-ios-copy-outline"></i>Viewing Requests</a>
                         </li>
                         <li>
                             <a href="db-favourites.html">
@@ -297,86 +309,101 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="db-add-list-wrap">
-                                <div class="act-title">
-                                    <h5>Edit Profile :</h5>
-                                </div>
-                                <div class="db-add-listing">
+                            <h5 class="pt-3 pb-2">User's Information</h5>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="text-grey">Name: </h6>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="text-grey">Email: </h6>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="text-grey">Phone Number: </h6>
+                        </div>
+                        <div class="col-md-12">
+                            <h5 class="py-2">User's Requests</h5>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="jumbotron p-3" style="background-color: #f3f4f5 !important;">
+                                <div class="act-title pt-2">
                                     <div class="row">
-                                        <div class="col-md-4 offset-md-4">
-                                            <!-- Avatar -->
-                                            <div class="edit-profile-photo">
-                                                <img src="images/agents/agent_1.jpg" alt="">
-                                                <div class="change-photo-btn">
-                                                    <div class="contact-form__upload-btn xs-left">
-                                                        <input class="contact-form__input-file" type="file" name="photo-upload" id="photo-upload">
-                                                        <span>
-                                                            Upload Photos
-                                                        </span>
+                                        <div class="col-lg-10 col-md-9">
+                                            <h6>Request Information</h6>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3">
+                                            <button class="btn btn-primary btn-block mb-2">New Request</button>
+                                        </div>
+                                    </div>
+                                   
+                                    <h6><span class="pr-1">Request's Date:</span>
+                                        <span>12/5/2020</span>
+                                    </h6>
+                                    <h6><span class="pr-1">Request's Message:</span>
+                                        <span class="font-weight-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem laborum eveniet velit totam molestiae accusamus, exercitationem qui vel praesentium similique debitis unde sint odio deleniti ipsum quaerat. Rerum, delectus tempore!</span>
+                                    </h6>
+                                    <div class="container p-0">
+
+                                        <div class="row pt-2">
+                                            <div class="col-md-7">
+                                                <div class="card mb-3 p-2 newCard">
+                                                    <h6>Property's information</h6>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-md-4">
+                                                            <img src="images/bg/about.jpg" class="imgView">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="card-body pt-0">
+                                                                <div class="row pt-1">
+                                                                    <div class="col-lg-9">
+                                                                        <p class="textCard">Property title <span>ID</span></p>
+                                                                    </div>
+                                                                    <div class="col-lg-3">
+                                                                        <p class="textCard">Rent</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-8">
+                                                                        <p class="textCard">location : <span>Cairo - Egypt </span></p>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <p class="textCard">Area : <span>500m</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="textCard">Price : <span>500 Pound</span></p>
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                        <p class="textCard">Posted Date : 10/10/200</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <p class="textCard">Last verified : 10/10/200</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h6>Owner's Information:</h6>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p class="textCard">Name : <span>mohamed essa</span></p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="textCard">Phone Number : <span>+2 0111 42 05243</span></p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>First name</label>
-                                                        <input type="text" class="form-control filter-input" placeholder="Tony">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>Last name</label>
-                                                        <input type="text" class="form-control filter-input" placeholder="Stark">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>Title</label>
-                                                        <input type="text" class="form-control filter-input" placeholder="Real estate Agent">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>Email</label>
-                                                        <input type="text" class="form-control filter-input" placeholder="steve@mail.com">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>Mobile Number</label>
-                                                        <input type="text" class="form-control filter-input" placeholder="+880 252 333">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>Current Password</label>
-                                                        <input type="password" class="form-control filter-input" placeholder="*******">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>New Password</label>
-                                                        <input type="password" class="form-control filter-input" placeholder="*******">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>Confirm New Password</label>
-                                                        <input type="password" class="form-control filter-input" placeholder="*******">
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="col-md-12">
-                                                    <a href="#" class="btn v3">Save Changes</a>
+                                            <div class="col-md-5">
+                                                <div class="jumbotron bg-white p-2">
+                                                    <h6>Updates</h6>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, optio alias ad atque eligendi aspernatur maiores aut illo repellat explicabo commodi saepe nemo eaque, et quis praesentium facilis, reiciendis eos!</p>
+                                                    <p>Lorem, ipsum dolor sit amsaepe nemo eaque, et quis praesentium facilis, reiciendis eos! repellat explicabo commodi saepe nemo eaque, et quis praesentium facilis, reiciendis eos!</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>

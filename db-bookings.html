@@ -19,7 +19,7 @@
     <!-- Dashboard CSS -->
     <link href="css/dashboard.css" rel="stylesheet" />
     <!-- Document Title -->
-    <title>SarchHolm - Real Estate HTML Template</title>
+    <title>Viewing Request</title>
 </head>
 
 <body>
@@ -61,7 +61,7 @@
                         </li>
                         <li>
                             <a href="db-bookings.html">
-                                <i class="ion-ios-copy-outline"></i>Booking Request</a>
+                                <i class="ion-ios-copy-outline"></i>Viewing Requests</a>
                         </li>
                         <li>
                             <a href="db-favourites.html">
@@ -299,195 +299,81 @@
                         <div class="col-md-12">
                             <div class="dash-bookings">
                                 <div class="act-title">
-                                    <h5>Bookings</h5>
-                                </div>
-                                <div class="db-booking-wrap table-content table-responsive">
+                                    <div class="row pb-5">
+                                        <div class="col-lg-9 col-md-8">
+                                            <h5 class="pb-3">Viewing Requests</h5>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4">
+                                            <button class="btn btn-primary ">Create new Request</button>
+                                        </div>
+                                    </div>
+                                    <!-- Nav pills -->
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="pill" href="#newRequest">New Requests</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#followups">Followups</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#sMeeting">Scheduled meetings</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#cancelRequest">Cancelled requests</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#sContract">Signed contracts</a>
+                                        </li>
+                                    </ul>
+                                    
+                                    <!-- Tab panes -->
+                                    <div class="tab-content pt-5">
+                                        <div class="tab-pane container active" id="newRequest">
+                                            <div class="db-booking-wrap table-content table-responsive">
                
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">ID</th>
-                                                <th scope="col">Date/Time</th>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Property</th>
-                                                <th scope="col">User Info</th>
-                                                <th scope="col">Exception</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="bg-white">
-                                                <th scope="row">#203</th>
-                                                <td>21/10/19</td>
-                                                <td>Sara conor</td>
-                                                <td>
-                                                    <div class="property-title-box">
-                                                        <h4><a href="single-listing-one.html">Family home in Glasgow</a></h4>
-                                                        <div class="property-location">
-                                                            <i class="fa fa-map-marker-alt"></i>
-                                                            <p>60 High St, Glasgow, London</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <ul class="list">
-                                                        <li>
-                                                            <div class="contact-info">
-                                                                <div class="text"><a href="tel:44078767595">+44 078 767 595</a></div>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="contact-info">
-                                                                <div class="text"><a href="#">sarah@mail.com</a></div>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                                <td>
-                                                    <div class="listing-button">
-                                                        <a href="#" class="btn v3">Cancel</a>
-                                                        <a href="#" class="btn v4">Approve</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">#207</th>
-                                                <td>15/10/19</td>
-                                                <td>Jhon edge</td>
-                                                <td>
-                                                    <div class="property-title-box">
-                                                        <h4><a href="single-listing-one.html">Villa on Hartford</a></h4>
-                                                        <div class="property-location">
-                                                            <i class="fa fa-map-marker-alt"></i>
-                                                            <p>2854 Meadow View Drive, Hartford, USA</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <ul class="list">
-                                                        <li>
-                                                            <div class="contact-info">
-                                                                <div class="text"><a href="tel:44078767595">+44 078 767 595</a></div>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="contact-info">
-                                                                <div class="text"><a href="#">edge@mail.com</a></div>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                                <td>
-                                                    <div class="listing-button">
-                                                        <a href="#" class="btn v3">Cancel</a>
-                                                        <a href="#" class="btn v4">Approve</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="bg-white">
-                                                <th scope="row">#305</th>
-                                                <td>3/10/19</td>
-                                                <td>Sarah williamson</td>
-                                                <td>
-                                                    <div class="property-title-box">
-                                                        <h4><a href="single-listing-one.html">Bay view Apartment</a></h4>
-                                                        <div class="property-location">
-                                                            <i class="fa fa-map-marker-alt"></i>
-                                                            <p>1797 Hillcrest Lane, Boulevard, CA</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <ul class="list">
-                                                        <li>
-                                                            <div class="contact-info">
-                                                                <div class="text"><a href="tel:44078767595">+88 765 767 595</a></div>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="contact-info">
-                                                                <div class="text"><a href="#">sarah@mail.com</a></div>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                                <td>
-                                                    <div class="listing-button">
-                                                        <a href="#" class="btn v3">Cancel</a>
-                                                        <a href="#" class="btn v4">Approve</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">#102</th>
-                                                <td>23/9/19</td>
-                                                <td>Jhon Conor</td>
-                                                <td>
-                                                    <div class="property-title-box">
-                                                        <h4><a href="single-listing-one.html">Office Space in Thatcham</a></h4>
-                                                        <div class="property-location">
-                                                            <i class="fa fa-map-marker-alt"></i>
-                                                            <p>Colthrop Lane, Thatcham, London</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <ul class="list">
-                                                        <li>
-                                                            <div class="contact-info">
-                                                                <div class="text"><a href="tel:44078767595">+44 234 767 595</a></div>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="contact-info">
-                                                                <div class="text"><a href="#">jhon@mail.com</a></div>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                                <td>
-                                                    <div class="listing-button">
-                                                        <a href="#" class="btn v3">Cancel</a>
-                                                        <a href="#" class="btn v4">Approve</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="bg-white">
-                                                <th scope="row">#313</th>
-                                                <td>25/9/19</td>
-                                                <td>Makato hiasho</td>
-                                                <td>
-                                                    <div class="property-title-box">
-                                                        <h4><a href="single-listing-one.html">Luxury Villa in Birmingham</a></h4>
-                                                        <div class="property-location">
-                                                            <i class="fa fa-map-marker-alt"></i>
-                                                            <p>159 Dudley Rd, Birmingham, UK</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <ul class="list">
-                                                        <li>
-                                                            <div class="contact-info">
-                                                                <div class="text"><a href="tel:44078767595">+99 034 444 666</a></div>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="contact-info">
-                                                                <div class="text"><a href="#">makato@mail.com</a></div>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                                <td>
-                                                    <div class="listing-button">
-                                                        <a href="#" class="btn v3">Cancel</a>
-                                                        <a href="#" class="btn v4">Approve</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                                <table class="table table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Name</th>
+                                                            <th scope="col">Email</th>
+                                                            <th scope="col">Phone Number</th>
+                                                            <th scope="col">Request</th>
+                                                            <th scope="col">Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">Smart House</th>
+                                                            <td>moh.essa2020@gmail.com</td>
+                                                            <td>01114205243</td>
+                                                            <td>1</td>
+                                                            <td>Scheduled</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Smart House</th>
+                                                            <td>moh.essa2020@gmail.com</td>
+                                                            <td>01114205243</td>
+                                                            <td>2</td>
+                                                            <td>Scheduled</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Smart House</th>
+                                                            <td>moh.essa2020@gmail.com</td>
+                                                            <td>01114205243</td>
+                                                            <td>3</td>
+                                                            <td>Scheduled</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane container fade" id="followups">...</div>
+                                        <div class="tab-pane container fade" id="sMeeting">...</div>
+                                        <div class="tab-pane container fade" id="cancelRequest">...</div>
+                                        <div class="tab-pane container fade" id="sContract">...</div>
+                                    </div>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
